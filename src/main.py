@@ -1,8 +1,8 @@
+# src/main.py
 from ui.app import FitCountProApp
-
-def main():
-    app = FitCountProApp()
-    app.mainloop()
+import os
 
 if __name__ == "__main__":
-    main()
+    app = FitCountProApp()
+    app.protocol("WM_DELETE_WINDOW", app.on_closing)
+    app.mainloop()
