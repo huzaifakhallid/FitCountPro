@@ -4,5 +4,14 @@ __pycache__/
 venv/
 env/
 
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Logs and Data
+logs/*.csv
+*.exe
+
 # IDE specific
 .vscode/
